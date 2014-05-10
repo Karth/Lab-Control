@@ -1,0 +1,333 @@
+/* 
+    Created on : Apr 29, 2014, 7:01:45 PM
+    Author     : carlos
+*/
+/* ================ StyleSheet Profile   ================== */
+
+
+*{margin: 0; padding: 0;}
+body{background-color: #EEE;  width: 100%; font-family: Pontano Sans; display: block; text-align: -webkit-center; }
+
+#name_user{
+	color: #EEE;    
+	font-size: 32px;  
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+
+
+#div_img{  
+	width: 127px;
+	height: 127px; 
+	border-radius: 100%;
+	border: 8px solid #EEE;
+}
+
+#user_img{
+	width: 127px;
+	height: 127px;
+	border-radius: 100%;
+	background: #FEFEFF;  
+	margin-top: 0.7%;
+	opacity: 0.7;
+}
+#user_img:hover{
+	opacity: 0.8;    
+}
+
+.nav{
+	width: 970px;
+	background-color: #333;    
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-top:1%;
+}
+
+
+.nav .selected{
+	font-weight: 600;
+}
+
+.nav #menu{
+	background-color: #FFF;    
+	width: 970px;
+	min-height: 40px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-box-shadow: 0 0 4px #999;
+	-moz-box-shadow: 0 0 4px #999;
+	box-shadow: 0 0 4px #999;
+}
+#menu li{  
+	font-size: 19px;
+	list-style: none;
+	padding: 7px 20px;
+	min-height: 30px;
+	float: left;
+}
+
+a{
+	color:#555;
+	text-decoration: none;
+	outline: none;
+}
+#menu li a:hover{
+	color:#5a5;    
+}
+
+
+
+
+
+
+/* === Submenu Agendamento === */
+#sub_menu_a{
+	width: 180px;    
+	background-color: #FEFEFE;
+	opacity: 0;
+	visibility: hidden;
+	text-align: left;
+	position: absolute;
+	top: 310px;
+	margin-left: -30px;
+	list-style: none; 
+	z-index: 9999;
+	-moz-box-shadow: 0 0 4px #999;
+	-webkit-box-shadow: 0 0 4px #999;
+	 box-shadow: 0 0 4px #999;
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s;
+	 transition: 0s;
+	border-radius: 5px;
+}
+li:hover #sub_menu_a{
+	opacity: 1;
+	top: 290px;
+	visibility: visible;       
+}
+#sub_menu_a:before{
+	content: '';
+	display: block;
+	border-color: transparent transparent #777;
+	border-style: solid;
+	border-width: 10px;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left:-10px;
+}
+#sub_menu_a li a {   
+	font-size: 16px;
+	padding-left: 15px;
+	font-weight: 300;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3%;
+}
+#sub_menu_a li a:hover{
+	padding-left: 27px;
+} 
+/* === Submenu cadastro ===*/
+#sub_menu_c{
+	width: 180px;    
+	background-color: #FEFEFE;
+	opacity: 0;
+	visibility: hidden;
+	text-align: left;
+	position: absolute;
+	top: 310px;
+	margin-left: -43px;
+	list-style: none; 
+	z-index: 9999;
+	-moz-box-shadow: 0 0 4px #999;
+	-webkit-box-shadow: 0 0 4px #999;
+	 box-shadow: 0 0 4px #999;
+	 border-radius: 5px;
+}
+li:hover #sub_menu_c{
+	opacity: 1;
+	top: 290px;
+	visibility: visible;       
+}
+#sub_menu_c:before{
+	content: '';
+	display: block;
+	border-color: transparent transparent #777;
+	border-style: solid;
+	border-width: 10px;
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	margin-left:-10px;
+}
+#sub_menu_c li a {   
+	font-size: 16px;
+	padding-left: 15px;
+	font-weight: 300;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+#sub_menu_c li a:hover{
+	padding-left: 27px;;
+} 
+
+
+
+
+#content_profile{
+	background-color: #FEFEFE;    
+	min-height: 600px;    
+	width:  970px;
+	margin-top: 2%;
+	padding-top: 2%;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 2px #999;
+	-moz-box-shadow: 0 0 2px #999;
+	box-shadow: 0 0 2px #999;
+}
+
+
+
+/* ==========  Content_Profile's stuffs ========== */
+
+#title_page{
+	color:#666;    
+	font-size: 190%;   
+	text-align: center;
+	margin: 0 0 4% 1% ;  
+}
+
+
+
+#form_user{
+    text-align: center;
+    width: 40%;
+}
+
+#form_user p{
+	font: bold 83% Arial;
+	color:#6A6A6A;  
+	margin-right: 100%;
+}
+
+.user_details{
+	background-color: #F6F6F6;
+	width: 100%;
+	height: 32px;
+	border-radius: 2px;
+	border: none;
+	outline:none;
+    margin: 3% 0 4% 0; 
+    color: #666;
+    font-size: 90%;
+    padding-left: 2%;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+	-webkit-box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+    -moz-box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+	box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+}
+.user_details:focus{
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 4px #0D0; 
+    -moz-box-shadow: 0 0 4px #0D0;
+	box-shadow: 0 0 4px #0D0; 
+
+}
+.btn{
+	background-image: linear-gradient(#70CC2A,#5AB91D);    
+	width: 40%;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	font: 18px Pontano Sans;
+	color:#FFF;  
+	margin-top: 10%;
+	margin-bottom: 10%;
+	-webkit-box-shadow: 0 1px 1px #687;
+	-moz-box-shadow:  0 1px 1px #687;
+	box-shadow:  0 1px 1px #566;
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s;
+	-ms-transition: 0.1s;
+	-o-transition: 0.1s;
+	transition: 0.1s;
+}
+
+
+/*================= Footer =====================*/
+
+
+
+#footer_profile{
+	background-color: #333;
+	min-height: 100px;
+	margin-top: 5%;
+	-webkit-box-shadow: 0 0 10px #333;
+	-moz-box-shadow: 0 0 10px #333 ;
+	box-shadow: 0 0 2px #666;
+	padding-top: 0.2%;
+}
+
+
+#copyright{
+	color: #EEE;   
+	font-size: 17px;  
+	width: 10%;
+	height: 30px;
+	cursor: alias;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	transition: 0.4s;
+	opacity: 0.7;
+}
+#copyright:hover{
+	opacity: 1;
+}
+
+#developer_details{ 
+	color: #EEE;   
+	font-size: 17px;  
+	width: 27%;
+	height: 100px;
+	margin-top: 2%;
+	cursor: alias;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	transition: 0.4s;
+	opacity: 0.7;
+}
+#developer_details:hover{
+	opacity: 1;
+}
+
+
+.img_contact{
+width: 30px;
+height: 30px;
+margin-top: 4%;
+opacity: 0.8;
+
+}
+.img_contact:hover{opacity: 1;}
+#icon_if{
+height: 31px;
+margin-top: 2%;
+opacity: 0.8;
+}
+#icon_if:hover{opacity: 1;}
+#icon_git{margin-right: 27%;}
+
+
+
+/* === StyleSheet Novo_Cadastro  === */
+

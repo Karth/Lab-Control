@@ -1,0 +1,40 @@
+/* 
+    Created on : Apr 28, 2014, 9:48:40 PM
+    Author     : carlos
+*/
+*{
+margin: 0;
+padding: 0;
+}
+body{
+background: #EEE;    
+}
+#box_erro_user{
+width: 40%;
+height: 250px;
+background: #fff;
+-webkit-box-shadow:  0 0 7px #777;
+-moz-box-shadow:  0 0 7px #777;
+box-shadow:  0 0 7px #777;
+border-radius: 5px;
+margin-top: 3%;
+padding-top: 2%;
+}
+#emoticon{
+color:#666;    
+font: 60px Ubuntu ;    
+-moz-transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+transform: rotate(90deg);    
+margin-bottom: 5%;
+}
+#text_error{
+color:#666;
+font: 25px Pontano Sans;    
+margin-bottom: 5%;
+}
+#loader{
+width: 27px;
+height: 27px;
+opacity: 0.5;    
+}
