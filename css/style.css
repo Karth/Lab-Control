@@ -9,10 +9,10 @@
 body{background-color: #EEE; background-repeat: no-repeat; background-size: 100%;}
 
 #title{
-color: #777;
-font: 80px Pontano Sans;
-margin-top: 1%;
-text-shadow: 0 1px #FFF;
+	color: #777;
+	font: 80px Pontano Sans;
+	margin-top: 1%;
+	text-shadow: 0 1px #FFF;
 }
 
 /*
@@ -38,25 +38,25 @@ height: 400px;
 */
 
 #content_login{
-width: 370px;
-border-top:  2px solid #777;
-margin-top: -0.5%;
+	width: 370px;
+	border-top:  2px solid #777;
+	margin-top: -0.5%;
 }
 
 
 #paper1{
-background-color: #FCFCFC; 
-width: 370px;
-height: 390px;
-position: absolute;
-z-index: 2;
-margin-top: 6%;
-transform:rotate(4deg);
--ms-transform:rotate(4deg); /* IE 9 */
--webkit-transform:rotate(4deg); /* Opera, Chrome, and Safari */
--webkit-box-shadow: 0 0 3px #999;
--moz-box-shadow: 0 0 3px #999;
-box-shadow: 0 0 3px #999;
+	background-color: #FCFCFC; 
+	width: 370px;
+	height: 390px;
+	position: absolute;
+	z-index: 2;
+	margin-top: 6%;
+	transform:rotate(4deg);
+	-ms-transform:rotate(4deg); /* IE 9 */
+	-webkit-transform:rotate(4deg); /* Opera, Chrome, and Safari */
+	-webkit-box-shadow: 0 0 3px #999;
+	-moz-box-shadow: 0 0 3px #999;
+	box-shadow: 0 0 3px #999;
 }
 #paper2{
 	background-color: #FCFCFC; 
