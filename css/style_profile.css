@@ -229,24 +229,31 @@ li:hover #sub_menu_c{
 	border-radius: 2px;
 	border: none;
 	outline:none;
-    margin: 3% 0 4% 0; 
-    color: #666;
-    font-size: 90%;
-    padding-left: 2%;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    -ms-transition: 0.2s;
-    -o-transition: 0.2s;
-    transition: 0.2s;
+	margin: 3% 0 4% 0; 
+	color: #666;
+	font-size: 90%;
+	padding-left: 2%;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
 	-webkit-box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
-    -moz-box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
-	box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+    	-moz-box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+	 box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
 }
 .user_details:focus{
 	background-color: #FFF;
+<<<<<<< HEAD
 	-webkit-box-shadow: 0 0 4px #0B0; 
     -moz-box-shadow: 0 0 4px #0B0;
 	box-shadow: 0 0 4px #0B0; 
+=======
+	-webkit-box-shadow: 0 0 4px #0D0; 
+    	-moz-box-shadow: 0 0 4px #0D0;
+	box-shadow: 0 0 4px #0D0; 
+
+>>>>>>> 20a14015f775108618330575896815e1d42c0bee
 }
 .btn{
 	background-image: linear-gradient(#70CC2A,#5AB91D);    
@@ -340,6 +347,7 @@ li:hover #sub_menu_c{
 
 }
 .img_contact:hover{opacity: 1;}
+
 #icon_if{
 	height: 31px;
 	margin-top: 2%;
