@@ -33,11 +33,11 @@
 </div>    
 
  <div id="content_profile">
- <p id="title_page">Listagem de itens cadastrados</p> 
-   <!-- Content here... -->
-</div>
-           
+ <p id="title_page">Listagem de itens cadastrados</p>
+  <table id="itens_table">
     
+  </table>
+</div>    
 <div id="footer_profile">
         <a href="http://portal.ifrn.edu.br/" target="_blank"><img id="icon_if" src="../../imgs/IFRN_Logo.png"></a>
         <p id="copyright">©Copyright IFRN <br></p>

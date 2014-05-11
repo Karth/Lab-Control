@@ -244,16 +244,13 @@ li:hover #sub_menu_c{
 }
 .user_details:focus{
 	background-color: #FFF;
-<<<<<<< HEAD
 	-webkit-box-shadow: 0 0 4px #0B0; 
     -moz-box-shadow: 0 0 4px #0B0;
 	box-shadow: 0 0 4px #0B0; 
-=======
 	-webkit-box-shadow: 0 0 4px #0D0; 
-    	-moz-box-shadow: 0 0 4px #0D0;
+    -moz-box-shadow: 0 0 4px #0D0;
 	box-shadow: 0 0 4px #0D0; 
 
->>>>>>> 20a14015f775108618330575896815e1d42c0bee
 }
 .btn{
 	background-image: linear-gradient(#70CC2A,#5AB91D);    
@@ -267,7 +264,7 @@ li:hover #sub_menu_c{
 	text-shadow: 0 -1px #666;
 	margin-top: 10%;
 	margin-bottom: 10%;
-    margin-left: 27%;
+    margin-left: 2%;
 	-webkit-box-shadow: 0 1px 1px #687;
 	-moz-box-shadow:  0 1px 1px #687;
 	box-shadow:  0 1px 1px #566;
@@ -442,3 +439,11 @@ li:hover #sub_menu_c{
     -moz-box-shadow: 0 0 4px #0B0;
 	box-shadow: 0 0 4px #0B0; 
 }
+
+
+#cadastre-btn{
+	margin-left: 30%;
+}
+
+
+/* === StyleSheet Cadastros  === */

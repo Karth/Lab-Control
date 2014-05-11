@@ -53,13 +53,11 @@ height: 400px;
 
 #paper1{
 	background-color: #FCFCFC; 
-<<<<<<< HEAD
 	width: 390px;
 	height: 410px;
-=======
 	width: 370px;
 	height: 390px;
->>>>>>> 20a14015f775108618330575896815e1d42c0bee
+
 	position: absolute;
 	z-index: 2;
 	margin-top: 6%;
