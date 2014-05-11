@@ -9,14 +9,14 @@
         <meta charset="UTF-8">
         <title>LabControl</title>
         <link rel="stylesheet" type="text/css" href="../../css/style_profile.css"/>    
-        <link href='http://fonts.googleapis.com/css?family=Pontano+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <script src="../../js/jquery/jarvis.js"></script>
     </head>
 <body>    
  <div class="nav">
-      <div id="div_img"><img id="user_img" src="../../imgs/user.png"></div>     
-       <p id="name_user"><?php echo $_SESSION['nome']; ?></p>
+  <div id="div_img"><img id="user_img" src="../../imgs/user.png"></div>     
+   <p id="name_user"><?php echo $_SESSION['nome']; ?></p>
     <ul id="menu"> 
-     <li class="selected"><a href="#">Perfil</a></li>
+     <li class="selected"><a href="">Perfil</a></li>
      <li><a href="#">Cadastros</a>
      <ul id="sub_menu_c">
       <li><a href="novo_cadastro.php">Novo</a></li>
@@ -32,15 +32,11 @@
      <li><a href="../../php/logout.php">Sair</a></li>
     </ul>
 </div>  
-    
-  
  <div id="content_profile">
  <p id="title_page">Meu Perfil</p> 
  <form method="post" action="#" id="form_user"> 
-   
    <p>Usuário</p>
    <input id="name" class="user_details" type="text" value="<?php echo $_SESSION['nome']; ?>">
- 
    <p>Email</p>
    <input id="email" class="user_details" type="email" value="<?php echo $_SESSION['email']; ?>">
    <p>Matricula</p>
@@ -50,9 +46,9 @@
    <p>Fone</p>
    <input id="fone" class="user_details" type="text" value="<?php echo $_SESSION['celular']; ?>">
    <input class="btn" type="submit" value="Salvar alterações">
-   <input class="btn" type="button" value="Nova senha ">
+   <input class="btn" type="button" value="Nova senha" id="bt-new-pass" onclick="new_pass()" >
  </form>
- </div>   
+  </div>   
     <div id="footer_profile">
         <a href="http://portal.ifrn.edu.br/" target="_blank"><img id="icon_if" src="../../imgs/IFRN_Logo.png"></a>
         <p id="copyright">©Copyright IFRN <br></p>

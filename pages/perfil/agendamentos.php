@@ -1,7 +1,7 @@
 <?php include '../../php/connection.php'; ?>
 <?php session_start();
    if(!isset($_SESSION["matricula"]) || !isset($_SESSION["senha"])){
-       header("Location: ../login.php");exit();}
+       header("Location: ../../index.php");exit();}
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,6 @@
         <meta charset="UTF-8">
         <title>Agendamentos</title>
         <link rel="stylesheet" type="text/css" href="../../css/style_profile.css"/>    
-        <link href='http://fonts.googleapis.com/css?family=Pontano+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
      </head>
     <body>    
 <div class="nav">
@@ -32,11 +31,11 @@
 <li><a href="../../php/logout.php">Sair</a></li>
 </ul>
 </div>
-    
-    
-    
-    
-    
+
+<div id="content_profile">
+ <p id="title_page">Todos os agendamentos</p> 
+   <!-- Content here... -->
+</div>
     
   <div id="footer_profile">
         <a href="http://portal.ifrn.edu.br/" target="_blank"><img id="icon_if" src="../../imgs/IFRN_Logo.png"></a>

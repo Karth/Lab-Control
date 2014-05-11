@@ -2,7 +2,14 @@
     Created on : Apr 29, 2014, 7:01:45 PM
     Author     : carlos
 */
-/* ================ StyleSheet Profile   ================== */
+
+/* @IMPORTS */
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+
+
+
+
+      /* ================ StyleSheet Profile   ================== */
 
 
 *{margin: 0; padding: 0;}
@@ -179,6 +186,8 @@ li:hover #sub_menu_c{
 
 
 
+/* ==========  Content_Profile's stuffs ========== */
+
 #content_profile{
 	background-color: #FEFEFE;    
 	min-height: 600px;    
@@ -186,14 +195,12 @@ li:hover #sub_menu_c{
 	margin-top: 2%;
 	padding-top: 2%;
 	border-radius: 5px;
+	border-top: 13px solid #5AB91D; 
 	-webkit-box-shadow: 0 0 2px #999;
 	-moz-box-shadow: 0 0 2px #999;
 	box-shadow: 0 0 2px #999;
 }
 
-
-
-/* ==========  Content_Profile's stuffs ========== */
 
 #title_page{
 	color:#666;    
@@ -206,7 +213,7 @@ li:hover #sub_menu_c{
 
 #form_user{
     text-align: center;
-    width: 40%;
+    width: 42%;
 }
 
 #form_user p{
@@ -237,22 +244,23 @@ li:hover #sub_menu_c{
 }
 .user_details:focus{
 	background-color: #FFF;
-	-webkit-box-shadow: 0 0 4px #0D0; 
-    -moz-box-shadow: 0 0 4px #0D0;
-	box-shadow: 0 0 4px #0D0; 
-
+	-webkit-box-shadow: 0 0 4px #0B0; 
+    -moz-box-shadow: 0 0 4px #0B0;
+	box-shadow: 0 0 4px #0B0; 
 }
 .btn{
 	background-image: linear-gradient(#70CC2A,#5AB91D);    
-	width: 40%;
+	width: 42%;
 	height: 35px;
 	border: none;
 	border-radius: 5px;
 	outline: none;
 	font: 18px Pontano Sans;
 	color:#FFF;  
+	text-shadow: 0 -1px #666;
 	margin-top: 10%;
 	margin-bottom: 10%;
+    margin-left: 27%;
 	-webkit-box-shadow: 0 1px 1px #687;
 	-moz-box-shadow:  0 1px 1px #687;
 	box-shadow:  0 1px 1px #566;
@@ -261,6 +269,19 @@ li:hover #sub_menu_c{
 	-ms-transition: 0.1s;
 	-o-transition: 0.1s;
 	transition: 0.1s;
+}
+
+.btn:focus{
+	background-image: linear-gradient(#5AB91D,#70CC2A);  
+}
+
+#bt-new-pass{
+	background-image: linear-gradient(#CC402A,#B91D1D);
+	margin-right: 3%;
+	margin-left: 3%;
+}
+#bt-new-pass:focus{
+	background-image: linear-gradient(#B91D1D,#CC402A);
 }
 
 
@@ -312,17 +333,17 @@ li:hover #sub_menu_c{
 
 
 .img_contact{
-width: 30px;
-height: 30px;
-margin-top: 4%;
-opacity: 0.8;
+	width: 30px;
+	height: 30px;
+	margin-top: 4%;
+	opacity: 0.8;
 
 }
 .img_contact:hover{opacity: 1;}
 #icon_if{
-height: 31px;
-margin-top: 2%;
-opacity: 0.8;
+	height: 31px;
+	margin-top: 2%;
+	opacity: 0.8;
 }
 #icon_if:hover{opacity: 1;}
 #icon_git{margin-right: 27%;}
@@ -331,3 +352,85 @@ opacity: 0.8;
 
 /* === StyleSheet Novo_Cadastro  === */
 
+
+
+
+#form_cadastre{
+    text-align: left;
+    width: 42%;
+}
+
+#form_cadastre p{
+	font: bold 94% Arial;
+	color:#6A6A6A; 
+	margin: 10% 0 0 0; 
+}
+
+
+
+.input-radio{
+	width: 15px;
+	height: 15px;
+	margin-top: 3%;
+	outline: none;
+}
+.input-check{
+	width: 15px;
+	height: 15px;
+	margin-top: 3%;
+	outline: none;
+}
+
+
+
+#description{
+	width: 100%;
+	height: 170px;
+	resize:none;
+	padding-left: 3%;
+	padding-top: 2%;
+	outline-color: green;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 3px #CCC;
+	-moz-box-shadow: 0 1px 3px #CCC;
+	box-shadow: 0 1px 3px #CCC;
+}
+
+
+#legend{
+	color: #999;
+	font-size: 85%; 
+}
+.key-words{
+	margin-left: 2%;
+}
+
+
+.input-text{
+	background-color: #F6F6F6;
+	width: 100%;
+	height: 32px;
+	border-radius: 2px;
+	border: none;
+	outline:none;
+    margin: 3% 0 4% 0; 
+    color: #666;
+    font-size: 90%;
+    padding-left: 2%;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+	-webkit-box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+    -moz-box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+	box-shadow: 0 0 1px #777 , inset 0 1px 1px rgba(196,196,196,0.3); 
+}
+.input-text:focus{
+	background-color: #FFF;
+	-webkit-box-shadow: 0 0 4px #0B0; 
+    -moz-box-shadow: 0 0 4px #0B0;
+	box-shadow: 0 0 4px #0B0; 
+}

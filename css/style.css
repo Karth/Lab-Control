@@ -4,6 +4,13 @@
     Author     : Carlos
 */
 
+/* @IMPORTS */
+@import url(http://fonts.googleapis.com/css?family=Pontano+Sans);
+
+
+
+
+
         /* =============  Login CSS  ============= */
 *{margin:0;padding:0;}
 body{background-color: #EEE; background-repeat: no-repeat; background-size: 100%;}
@@ -45,23 +52,23 @@ margin-top: -0.5%;
 
 
 #paper1{
-background-color: #FCFCFC; 
-width: 370px;
-height: 390px;
-position: absolute;
-z-index: 2;
-margin-top: 6%;
-transform:rotate(4deg);
--ms-transform:rotate(4deg); /* IE 9 */
--webkit-transform:rotate(4deg); /* Opera, Chrome, and Safari */
--webkit-box-shadow: 0 0 3px #999;
--moz-box-shadow: 0 0 3px #999;
-box-shadow: 0 0 3px #999;
+	background-color: #FCFCFC; 
+	width: 390px;
+	height: 410px;
+	position: absolute;
+	z-index: 2;
+	margin-top: 6%;
+	transform:rotate(4deg);
+	-ms-transform:rotate(4deg); /* IE 9 */
+	-webkit-transform:rotate(4deg); /* Opera, Chrome, and Safari */
+	-webkit-box-shadow: 0 0 3px #999;
+	-moz-box-shadow: 0 0 3px #999;
+	box-shadow: 0 0 3px #999;
 }
 #paper2{
 	background-color: #FCFCFC; 
-	width: 370px;
-	height: 390px;
+	width: 390px;
+	height: 410px;
 	position: absolute;
 	z-index: 1;    
 	margin-top: 6%;
@@ -74,8 +81,8 @@ box-shadow: 0 0 3px #999;
 }
 #form_login{
 	background-color: #FCFCFC; 
-	width: 370px;
-	height: 390px;
+	width: 390px;
+	height: 410px;
 	position: absolute;
 	z-index: 3;
 	margin-top: 6%;
@@ -100,13 +107,13 @@ box-shadow: 0 0 3px #999;
 
 .txt_field{
 	width: 80%;
-	height: 44px;
+	height: 40px;
 	margin-bottom: 1%;
 	margin-top: 5%;
 	padding-left:3%;
 	color:#777;
 	background-color: #F7F7F7;
-	font: 20px Pontano Sans;
+	font: 18px Pontano Sans;
 	border:none;
 	border-radius: 5px;
 	outline: none;
@@ -121,13 +128,13 @@ box-shadow: 0 0 3px #999;
 }
 .txt_field:focus{
 	background-color: #FAFAFA;
-	box-shadow: 0 0 2px #0F0 , inset 0 0 7px rgba(170,190,170,0.1);    
+	box-shadow: 0 0 2px #0F0 , inset 0 0 7px rgba(170,190,170,0.2);    
 }
 
 
-#bt_login{
+#bt-login{
 	background-image: linear-gradient(#70CC2A,#5AB91D);      
-	width: 130px;
+	width: 70%;
 	height: 35px;
 	border: none;
 	border-radius: 5px;
@@ -135,8 +142,9 @@ box-shadow: 0 0 3px #999;
 	font: 18px Pontano Sans;
 	color:#FFF;
 	text-shadow: 0 -1px #777;  
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 40px;
+	margin-left: 4%;
+	margin-right: 4%;
 	-webkit-box-shadow: 0 1px 1px #566;
 	-moz-box-shadow:  0 1px 1px #566;
 	box-shadow:  0 1px 1px #566;
@@ -146,21 +154,53 @@ box-shadow: 0 0 3px #999;
 	-o-transition: 0.1s;
 	transition: 0.1s;
 }
-#bt_login:focus{
+#bt-login:focus{
 	background-image: linear-gradient(#5AB91D , #70CC2A);     
 	-webkit-box-shadow:  0 1px 1px #566;
 	-moz-box-shadow:  0 1px 1px #566;
 	box-shadow:  0 1px 1px #566;
 }
+
+/*
+#bt-cadastre{
+	background-image: linear-gradient(#CC402A,#B91D1D);      
+	width: 35%;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	font: 18px Pontano Sans;
+	color:#FFF;
+	text-shadow: 0 -1px #777;  
+	margin-top: 40px;
+	margin-left: 4%;
+	margin-right: 4%;
+	-webkit-box-shadow: 0 1px 1px #422;
+	-moz-box-shadow:  0 1px 1px #422;
+	box-shadow:  0 1px 1px #422;
+	-webkit-transition: 0.1s;
+	-moz-transition: 0.1s;
+	-ms-transition: 0.1s;
+	-o-transition: 0.1s;
+	transition: 0.1s;
+}
+#bt-cadastre:focus{
+	background-image: linear-gradient(#B91D1D,#CC402A);  
+	-webkit-box-shadow:  0 1px 1px #422;
+	-moz-box-shadow:  0 1px 1px #422;
+	box-shadow:  0 1px 1px #422;
+}
+*/
+
 a{
 	color:#666;
 	text-decoration: none;
-	font: 14.5px Pontano Sans;
-	margin-right: 45%;
+	font: 100% Pontano Sans;
+	margin-right: 42%;
 	outline: none;
 }
 a:hover{
-	color:#D00;
+	color:#A00;
 }
 
 
