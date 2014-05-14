@@ -31,12 +31,28 @@
 <li><a href="../../php/logout.php">Sair</a></li>
 </ul>
 </div>    
-
  <div id="content_profile">
  <p id="title_page">Listagem de itens cadastrados</p>
-  <table id="itens_table">
-    
+  
+  <table id="itens_table" border="1">
+    <!--Table header -->
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Tipo</th>
+        <th>Quantidade</th>
+      </tr>   
+    </thead>
+    <!--Table body-->
+    <tbody>
+      <tr>
+        <th>20/10/2014</th>
+        <th>Permanente</th>
+        <th>100</th>
+      </tr>
+    </tbody>
   </table>
+
 </div>    
 <div id="footer_profile">
         <a href="http://portal.ifrn.edu.br/" target="_blank"><img id="icon_if" src="../../imgs/IFRN_Logo.png"></a>
