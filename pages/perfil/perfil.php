@@ -34,18 +34,24 @@
   </div>  
    <div id="content_profile">
    <p id="title_page">Meu Perfil</p> 
-   <form method="post" action="#" id="form_user"> 
+   <form method="post" action="../../php/functions.php" id="form_user"> 
      <p>Usuário</p>
-     <input id="name" class="user_details" type="text" value="<?php echo $_SESSION['nome']; ?>">
-     <p>Email</p>
-     <input id="email" class="user_details" type="email" value="<?php echo $_SESSION['email']; ?>">
+     <input id="name" class="user_details" name="usuario" type="text" value="<?php echo $_SESSION['nome']; ?>">
      <p>Matricula</p>
-     <input id="matricula" class="user_details" type="text" value="<?php echo $_SESSION['matricula']; ?>">
+     <input id="matricula"  class="user_details" name="matricula" type="text" value="<?php echo $_SESSION['matricula']; ?>">
+    
+     <input id="id" hidden class="user_details" name="id" type="text" value="<?php echo $_SESSION['id']; ?>">
+
+     <p>Email</p>
+     <input id="email" class="user_details" name="email" type="email" value="<?php echo $_SESSION['email']; ?>">
      <p>Idade</p>
-     <input id="idade" class="user_details" type="text" value="<?php echo $_SESSION['idade']; ?>">
+     <input id="idade" class="user_details" name="idade" type="text" value="<?php echo $_SESSION['idade']; ?>">
      <p>Fone</p>
-     <input id="fone" class="user_details" type="text" value="<?php echo $_SESSION['celular']; ?>">
-     <input class="btn" type="submit" value="Salvar alterações">
+     <input id="fone" class="user_details" name="fone" type="text" value="<?php echo $_SESSION['celular']; ?>">
+     <p>Endereço</p>
+     <input id="endereco" class="user_details" name="endereco" type="text" value="<?php echo $_SESSION['endereco']; ?>">
+     
+     <input class="btn" type="submit" name="update" value="Salvar alterações">
      <input class="btn" type="button" value="Nova senha" id="bt-new-pass" onclick="new_pass()" >
    </form>
     </div>   

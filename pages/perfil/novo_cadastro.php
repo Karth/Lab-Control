@@ -4,7 +4,7 @@
        header("Location: ../../index.php");exit();}
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="pt">
     <head>
         <meta charset="UTF-8">
         <title>Cadastro de itens</title>
@@ -36,7 +36,7 @@
 <div id="content_profile">
  <p id="title_page">Cadastre um novo item agora</p> 
  
- <form method="post" action="../../php/functions.php?function=c" id="form_cadastre">   
+ <form method="post" action="../../php/functions.php" id="form_cadastre">   
        <p>Data de recebimento do item</p>
        <input class="input-text" name="date" type="date" required>
        <p>Tipo de material</p>
@@ -93,7 +93,7 @@
 
         <p>Fornecedor principal</p>
         <input type="text" name="provider" class="input-text" required>  
-        <input class="btn" type="submit" id="cadastre-btn" value="Salvar">
+        <input class="btn" type="submit" id="cadastre-btn" name="cadastrar" value="Salvar">
  </form>
 </div>
  <div id="footer_profile">

@@ -34,24 +34,46 @@
  <div id="content_profile">
  <p id="title_page">Listagem de itens cadastrados</p>
   
-  <table id="itens_table" border="1">
-    <!--Table header -->
-    <thead>
-      <tr>
-        <th>Data</th>
-        <th>Tipo</th>
-        <th>Quantidade</th>
-      </tr>   
-    </thead>
-    <!--Table body-->
-    <tbody>
-      <tr>
-        <th>20/10/2014</th>
-        <th>Permanente</th>
-        <th>100</th>
-      </tr>
-    </tbody>
-  </table>
+ <table cellspacing='0'> 
+  <!-- cellspacing='0' is important, must stay -->
+
+  <!-- Table Header -->
+  <thead>
+    <tr>
+      <th>Data do recebimento</th>
+      <th>Tipo do material</th>
+      <th>Unidade</th>
+      <th>Quantidade</th>
+      <th>Palavra chave</th>
+    </tr>
+  </thead>
+  
+
+  <!-- Table Body -->
+  <tbody>   
+   <?php
+    $command = "SELECT * FROM itens";
+    try {
+      $query = $pdo->prepare($command);
+      $query->execute();
+    } catch (PDOException $e) {
+      echo $e->getMessage();
+    }
+    while ($result = $query->fetch(PDO::FETCH_OBJ)) {     
+    ?>
+    <tr>
+      <td><?php echo $result->data_recebimento; ?></td>
+      <td><?php echo $result->tipo_material ?></td>
+      <td><?php echo $result->unidade ?></td>
+      <td><?php echo $result->quantidade ?></td>
+      <td><?php echo $result->palavra_chave ?></td>
+    </tr>
+    <?php } ?>
+  </tbody>
+ 
+
+
+</table>
 
 </div>    
 <div id="footer_profile">
