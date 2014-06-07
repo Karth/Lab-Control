@@ -1,4 +1,3 @@
-Lab-Control
-===========
+#  PHP PDO 
 
-This is a project for IFRN-JC. To keep control into the labs...  
+This is a PHP example to learn PDO
